@@ -1,21 +1,7 @@
 <!-- TITLE -->
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <div class="oe_span12" style="text-align: center; position: relative;">
-            <!-- EDITION BADGES -->
-            <div style="position: absolute; top: 0; right: 0;">
-                <div style="display: inline-block; text-align: center;">
-                    <span style="display: inline-block; padding: 8px 18px; background: linear-gradient(135deg, #714B67, #9B6A8E); color: #fff; font-weight: bold; font-size: 13px; border-radius: 8px 8px 0 0; letter-spacing: 0.5px;">
-                        <i class="fa fa-cube" style="margin-right: 5px;"></i> COMMUNITY
-                    </span>
-                    <span style="display: inline-block; padding: 8px 18px; background: linear-gradient(135deg, #017e84, #00b3a7); color: #fff; font-weight: bold; font-size: 13px; border-radius: 8px 8px 0 0; letter-spacing: 0.5px; margin-left: 4px;">
-                        <i class="fa fa-building" style="margin-right: 5px;"></i> ENTERPRISE
-                    </span>
-                    <div style="background: linear-gradient(135deg, #714B67, #017e84); color: #fff; padding: 5px 12px; border-radius: 0 0 8px 8px; font-size: 11px; font-weight: bold; letter-spacing: 1px;">
-                        COMPATIBLE WITH BOTH EDITIONS
-                    </div>
-                </div>
-            </div>
+        <div class="oe_span12" style="text-align: center;">
             <img src="icon.png" alt="WhatsApp Cloud API Connector" style="width: 120px; height: 120px; margin-bottom: 15px;"/>
             <h2 style="color: #25D366; font-size: 32px; font-weight: bold; margin-bottom: 10px;">
                 WhatsApp Cloud API Connector
@@ -23,25 +9,21 @@
             <h4 style="color: #555; font-weight: normal; margin-bottom: 10px;">
                 Connect Odoo to Meta WhatsApp Cloud API &mdash; send &amp; receive messages from Contacts, Sales Orders &amp; Invoices. No middleware, no monthly fees.
             </h4>
+            <!-- EDITION BADGES -->
+            <div style="display: inline-block; text-align: center; margin-top: 10px;">
+                <span style="display: inline-block; padding: 8px 18px; background: linear-gradient(135deg, #714B67, #9B6A8E); color: #fff; font-weight: bold; font-size: 13px; border-radius: 8px 8px 0 0; letter-spacing: 0.5px;">
+                    <i class="fa fa-cube" style="margin-right: 5px;"></i> COMMUNITY
+                </span>
+                <span style="display: inline-block; padding: 8px 18px; background: linear-gradient(135deg, #017e84, #00b3a7); color: #fff; font-weight: bold; font-size: 13px; border-radius: 8px 8px 0 0; letter-spacing: 0.5px; margin-left: 4px;">
+                    <i class="fa fa-building" style="margin-right: 5px;"></i> ENTERPRISE
+                </span>
+                <div style="background: linear-gradient(135deg, #714B67, #017e84); color: #fff; padding: 5px 12px; border-radius: 0 0 8px 8px; font-size: 11px; font-weight: bold; letter-spacing: 1px;">
+                    COMPATIBLE WITH BOTH EDITIONS
+                </div>
+            </div>
         </div>
     </div>
 </section>
-
-<!-- TAB NAVIGATION -->
-<section class="oe_container" style="padding: 0;">
-    <div class="oe_row">
-        <div class="oe_span12" style="text-align: center; margin-bottom: 10px;">
-            <a href="#tab_description" style="display: inline-block; padding: 12px 30px; margin: 0 5px; background: #25D366; color: #fff; border-radius: 8px 8px 0 0; text-decoration: none; font-weight: bold; font-size: 15px;">Description</a>
-            <a href="#tab_documentation" style="display: inline-block; padding: 12px 30px; margin: 0 5px; background: #e8e8e8; color: #333; border-radius: 8px 8px 0 0; text-decoration: none; font-weight: bold; font-size: 15px;">Documentation</a>
-            <a href="#tab_license" style="display: inline-block; padding: 12px 30px; margin: 0 5px; background: #e8e8e8; color: #333; border-radius: 8px 8px 0 0; text-decoration: none; font-weight: bold; font-size: 15px;">License</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- TAB 1: DESCRIPTION -->
-<!-- ============================================================ -->
-<div id="tab_description">
 
 <!-- FEATURES BANNER -->
 <section class="oe_container" style="background: #25D366; padding: 25px 0; border-radius: 12px;">
@@ -289,280 +271,6 @@
     </div>
 </section>
 
-</div><!-- end tab_description -->
-
-<!-- ============================================================ -->
-<!-- TAB 2: DOCUMENTATION -->
-<!-- ============================================================ -->
-<div id="tab_documentation">
-
-<section class="oe_container" style="background: #25D366; padding: 25px 0; border-radius: 12px;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12" style="text-align: center;">
-            <h2 style="color: #fff; font-size: 30px; font-weight: bold; margin: 0;">Setup Guide</h2>
-        </div>
-    </div>
-</section>
-
-<!-- STEP 1 -->
-<section class="oe_container" style="padding: 30px 0;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #25D366; font-size: 24px; margin-bottom: 15px;">
-                <span style="display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%; background: #25D366; color: #fff; font-size: 16px; margin-right: 10px;">1</span>
-                Create Meta Developer App
-            </h3>
-            <ol style="color: #666; font-size: 15px; line-height: 2;">
-                <li>Go to <strong>developers.facebook.com</strong> &rarr; My Apps &rarr; Create App</li>
-                <li>Select app type: <strong>Business</strong></li>
-                <li>Add the <strong>WhatsApp</strong> product to your app</li>
-                <li>Note your <strong>App ID</strong> and <strong>App Secret</strong> (from App Settings &rarr; Basic)</li>
-            </ol>
-        </div>
-    </div>
-</section>
-
-<!-- STEP 2 -->
-<section class="oe_container" style="background: #E8F5E9; padding: 30px 20px; border-radius: 12px;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #25D366; font-size: 24px; margin-bottom: 15px;">
-                <span style="display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%; background: #25D366; color: #fff; font-size: 16px; margin-right: 10px;">2</span>
-                Get API Credentials
-            </h3>
-            <ol style="color: #666; font-size: 15px; line-height: 2;">
-                <li>Go to WhatsApp &rarr; <strong>API Setup</strong></li>
-                <li>Copy your <strong>Phone Number ID</strong> and <strong>Business Account ID</strong></li>
-                <li>Create a <strong>System User</strong> in Meta Business Suite &rarr; Settings &rarr; System Users</li>
-                <li>Generate a <strong>permanent token</strong> for the System User with permissions:<br/>
-                    <code style="background: #fff; padding: 3px 8px; border-radius: 4px;">whatsapp_business_management</code> and
-                    <code style="background: #fff; padding: 3px 8px; border-radius: 4px;">whatsapp_business_messaging</code>
-                </li>
-            </ol>
-        </div>
-    </div>
-</section>
-
-<!-- STEP 3 -->
-<section class="oe_container" style="padding: 30px 0;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #25D366; font-size: 24px; margin-bottom: 15px;">
-                <span style="display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%; background: #25D366; color: #fff; font-size: 16px; margin-right: 10px;">3</span>
-                Register Phone Number
-            </h3>
-            <ol style="color: #666; font-size: 15px; line-height: 2;">
-                <li>You can use the Meta <strong>test phone number</strong> or add your own business phone number</li>
-                <li>Make sure the phone number is <strong>registered</strong> with WhatsApp Cloud API</li>
-                <li>In <strong>Development mode</strong>, add test recipient numbers in API Setup</li>
-            </ol>
-        </div>
-    </div>
-</section>
-
-<!-- STEP 4 -->
-<section class="oe_container" style="background: #E8F5E9; padding: 30px 20px; border-radius: 12px;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #25D366; font-size: 24px; margin-bottom: 15px;">
-                <span style="display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%; background: #25D366; color: #fff; font-size: 16px; margin-right: 10px;">4</span>
-                Complete Business Requirements
-            </h3>
-            <div style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 8px; padding: 15px; margin: 10px 0;">
-                <strong>⚠️ Important &mdash; Meta requires the following for message delivery:</strong>
-                <ul style="margin-top: 8px; color: #666; line-height: 2;">
-                    <li><strong>Payment Method</strong> &mdash; Add a credit/debit card in Meta Business Suite &rarr; Billing</li>
-                    <li><strong>Business Profile</strong> &mdash; Fill in Legal Name, Country, and Website in Business Settings</li>
-                    <li><strong>Business Verification</strong> &mdash; Start verification in Business Settings (recommended)</li>
-                </ul>
-                <p style="margin-top: 8px; margin-bottom: 0; color: #856404;">
-                    Without a payment method, Meta will <strong>accept messages via API but will NOT deliver them</strong>.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- STEP 5 -->
-<section class="oe_container" style="padding: 30px 0;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #25D366; font-size: 24px; margin-bottom: 15px;">
-                <span style="display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%; background: #25D366; color: #fff; font-size: 16px; margin-right: 10px;">5</span>
-                Configure Webhook (for incoming messages)
-            </h3>
-            <ol style="color: #666; font-size: 15px; line-height: 2;">
-                <li>In Meta Developer Console &rarr; WhatsApp &rarr; Configuration &rarr; Webhook</li>
-                <li>Set Callback URL: <code style="background: #f5f5f5; padding: 3px 8px; border-radius: 4px;">https://your-odoo-domain.com/whatsapp/webhook</code></li>
-                <li>Set Verify Token: same value as configured in Odoo Settings</li>
-                <li>Subscribe to webhook fields: <strong>messages</strong> and <strong>message_template_status_update</strong></li>
-            </ol>
-        </div>
-    </div>
-</section>
-
-<!-- STEP 6 -->
-<section class="oe_container" style="background: #E8F5E9; padding: 30px 20px; border-radius: 12px;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #25D366; font-size: 24px; margin-bottom: 15px;">
-                <span style="display: inline-block; width: 36px; height: 36px; line-height: 36px; text-align: center; border-radius: 50%; background: #25D366; color: #fff; font-size: 16px; margin-right: 10px;">6</span>
-                Configure in Odoo
-            </h3>
-            <ol style="color: #666; font-size: 15px; line-height: 2;">
-                <li>Install this module</li>
-                <li>Go to <strong>Settings &rarr; WhatsApp</strong></li>
-                <li>Fill in all API credentials:</li>
-            </ol>
-            <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin: 15px 0;">
-                <tr style="background: #25D366; color: white;">
-                    <th style="padding: 10px; text-align: left; border-radius: 6px 0 0 0;">Setting</th>
-                    <th style="padding: 10px; text-align: left; border-radius: 0 6px 0 0;">Where to find it</th>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 10px;"><strong>API Token</strong></td>
-                    <td style="padding: 10px;">Meta Business Suite &rarr; System Users &rarr; Generate Token</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-                    <td style="padding: 10px;"><strong>Phone Number ID</strong></td>
-                    <td style="padding: 10px;">Meta Developer Console &rarr; WhatsApp &rarr; API Setup</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 10px;"><strong>Business Account ID</strong></td>
-                    <td style="padding: 10px;">Meta Developer Console &rarr; WhatsApp &rarr; API Setup</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-                    <td style="padding: 10px;"><strong>API Version</strong></td>
-                    <td style="padding: 10px;">Default: v25.0</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 10px;"><strong>Webhook Verify Token</strong></td>
-                    <td style="padding: 10px;">You choose this &mdash; must match Meta Console</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-                    <td style="padding: 10px;"><strong>App Secret</strong></td>
-                    <td style="padding: 10px;">Meta Developer Console &rarr; App Settings &rarr; Basic</td>
-                </tr>
-            </table>
-            <ol start="4" style="color: #666; font-size: 15px; line-height: 2;">
-                <li>Click <strong>Test Connection</strong> &mdash; should show your phone number and business name</li>
-                <li>Click <strong>Sync Templates from Meta</strong> &mdash; imports all approved templates</li>
-                <li>Done! Open any Contact and click <strong>Send WhatsApp</strong></li>
-            </ol>
-        </div>
-    </div>
-</section>
-
-<!-- TROUBLESHOOTING -->
-<section class="oe_container" style="padding: 30px 0;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #333; font-size: 24px; margin-bottom: 20px;">Troubleshooting</h3>
-            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-                <tr style="background: #f5f5f5;">
-                    <th style="padding: 10px; text-align: left; width: 35%;">Problem</th>
-                    <th style="padding: 10px; text-align: left;">Solution</th>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 10px;">Messages accepted but not delivered</td>
-                    <td style="padding: 10px;">Add a <strong>payment method</strong> in Meta Business Suite. Complete business profile (Legal Name, Country, Website).</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-                    <td style="padding: 10px;">Error: Account not registered (#133010)</td>
-                    <td style="padding: 10px;">Recipient number doesn't have WhatsApp, or not added as test recipient in Development mode.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 10px;">Error: Token could not be decrypted</td>
-                    <td style="padding: 10px;">API token is invalid or expired. Generate a new permanent token from System User.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee; background: #f9f9f9;">
-                    <td style="padding: 10px;">Webhook verification failed</td>
-                    <td style="padding: 10px;">Verify Token in Odoo must match exactly with Meta Console. Odoo server must be publicly accessible.</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #eee;">
-                    <td style="padding: 10px;">Test Connection failed</td>
-                    <td style="padding: 10px;">Check API Token and Phone Number ID. Ensure network connectivity from Odoo server.</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</section>
-
-<!-- TECHNICAL DETAILS -->
-<section class="oe_container" style="background: #E8F5E9; padding: 30px 20px; border-radius: 12px;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #333; font-size: 24px; margin-bottom: 20px;">Technical Details</h3>
-            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
-                <tr style="border-bottom: 1px solid #ccc;">
-                    <td style="padding: 10px; width: 35%;"><strong>Odoo Version</strong></td>
-                    <td style="padding: 10px;">19.0 (Community &amp; Enterprise)</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ccc;">
-                    <td style="padding: 10px;"><strong>Dependencies</strong></td>
-                    <td style="padding: 10px;">base, mail, contacts, sale_management, account</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ccc;">
-                    <td style="padding: 10px;"><strong>API</strong></td>
-                    <td style="padding: 10px;">Meta WhatsApp Cloud API (Graph API v25.0+)</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ccc;">
-                    <td style="padding: 10px;"><strong>Webhook</strong></td>
-                    <td style="padding: 10px;"><code>/whatsapp/webhook</code> (GET verify + POST receive)</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ccc;">
-                    <td style="padding: 10px;"><strong>Models</strong></td>
-                    <td style="padding: 10px;">whatsapp.message, whatsapp.template, whatsapp.composer</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #ccc;">
-                    <td style="padding: 10px;"><strong>Menu</strong></td>
-                    <td style="padding: 10px;">WhatsApp &rarr; Messages, Templates, Configuration</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</section>
-
-</div><!-- end tab_documentation -->
-
-<!-- ============================================================ -->
-<!-- TAB 3: LICENSE -->
-<!-- ============================================================ -->
-<div id="tab_license">
-
-<section class="oe_container" style="padding: 30px 0;">
-    <div class="oe_row oe_spaced">
-        <div class="oe_span12">
-            <h3 style="color: #333; font-size: 24px; margin-bottom: 20px;">License &mdash; OPL-1</h3>
-            <div style="background: #f9f9f9; border: 1px solid #ddd; border-radius: 10px; padding: 25px; font-size: 14px; line-height: 1.8; color: #555;">
-                <p>
-                    This module is licensed under the <strong>Odoo Proprietary License v1.0 (OPL-1)</strong>.
-                </p>
-                <p>
-                    This means:
-                </p>
-                <ul>
-                    <li><strong>Single Instance</strong> &mdash; Each purchase grants usage on <strong>one Odoo production instance</strong></li>
-                    <li><strong>No Distribution</strong> &mdash; You may not redistribute, publish, or share the source code</li>
-                    <li><strong>No Modification Sharing</strong> &mdash; Modified versions may not be shared outside your organization</li>
-                    <li><strong>Includes Updates</strong> &mdash; Free bug fixes and updates from the author</li>
-                </ul>
-                <p>
-                    You are allowed to:
-                </p>
-                <ul>
-                    <li>Use this module on one Odoo production instance and unlimited staging/test instances</li>
-                    <li>Modify the source code for your own internal use</li>
-                </ul>
-                <p style="margin-top: 15px;">
-                    Full license text: <a href="https://www.odoo.com/documentation/19.0/legal/licenses.html#odoo-apps" target="_blank" style="color: #25D366;">https://www.odoo.com/documentation/19.0/legal/licenses.html#odoo-apps</a>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-</div><!-- end tab_license -->
 
 <!-- SUPPORT -->
 <section class="oe_container" style="background: #25D366; padding: 30px 0; border-radius: 12px;">
