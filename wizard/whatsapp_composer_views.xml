@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Composer Form View -->
+    <record id="whatsapp_composer_view_form" model="ir.ui.view">
+        <field name="name">whatsapp.composer.form</field>
+        <field name="model">whatsapp.composer</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="partner_id"/>
+                        <field name="phone"/>
+                    </group>
+                    <group>
+                        <field name="message_type"/>
+                        <field name="template_id" invisible="message_type != 'template'"/>
+                    </group>
+                </group>
+                <separator string="Message"/>
+                <field name="body" placeholder="Type your WhatsApp message here..."/>
+                <field name="partner_ids" widget="many2many_tags"
+                       placeholder="Add more recipients for bulk send (optional)..."/>
+                <field name="res_model" invisible="1"/>
+                <field name="res_id" invisible="1"/>
+                <footer>
+                    <button name="action_send" type="object" string="Send via API"
+                            class="btn-primary" icon="fa-paper-plane"/>
+                    <button name="action_open_wa_link" type="object" string="Open in WhatsApp"
+                            class="btn-secondary" icon="fa-external-link"
+                            help="Open wa.me link (no API needed)"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

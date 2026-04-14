@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Top-level WhatsApp menu -->
+    <menuitem id="menu_whatsapp_root"
+              name="WhatsApp"
+              web_icon="sm_whatsapp,static/description/icon.png"
+              groups="sm_whatsapp.group_whatsapp_user"
+              sequence="85"/>
+
+    <menuitem id="menu_whatsapp_messages"
+              name="Messages"
+              parent="menu_whatsapp_root"
+              action="whatsapp_message_action"
+              sequence="10"/>
+
+    <menuitem id="menu_whatsapp_templates"
+              name="Templates"
+              parent="menu_whatsapp_root"
+              action="whatsapp_template_action"
+              groups="sm_whatsapp.group_whatsapp_manager"
+              sequence="20"/>
+
+    <!-- Configuration sub-menu -->
+    <menuitem id="menu_whatsapp_config"
+              name="Configuration"
+              parent="menu_whatsapp_root"
+              groups="sm_whatsapp.group_whatsapp_manager"
+              sequence="90"/>
+
+    <menuitem id="menu_whatsapp_settings"
+              name="Settings"
+              parent="menu_whatsapp_config"
+              action="base_setup.action_general_configuration"
+              groups="sm_whatsapp.group_whatsapp_manager"
+              sequence="10"/>
+
+</odoo>

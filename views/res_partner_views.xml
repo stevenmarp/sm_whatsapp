@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="view_partner_form_whatsapp" model="ir.ui.view">
+        <field name="name">res.partner.form.whatsapp</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Add WhatsApp number field after phone -->
+            <xpath expr="//field[@name='phone' and @widget='phone']/.." position="after">
+                <div class="d-flex align-items-baseline w-md-50">
+                    <i class="fa fa-fw me-1 fa-comments text-success" title="WhatsApp"/>
+                    <field name="whatsapp_number" class="w-100" widget="phone" placeholder="WhatsApp"/>
+                </div>
+            </xpath>
+
+            <!-- Add Send WhatsApp button in form -->
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="action_send_whatsapp" type="object"
+                            string="Send WhatsApp" class="btn-primary"
+                            icon="fa-whatsapp"
+                            invisible="not whatsapp_number"
+                            groups="sm_whatsapp.group_whatsapp_user"/>
+                </header>
+            </xpath>
+
+            <!-- Add WhatsApp stat button in button_box -->
+            <xpath expr="//div[hasclass('oe_button_box')]" position="inside">
+                <button name="action_view_whatsapp_messages" type="object"
+                        class="oe_stat_button" icon="fa-comments"
+                        groups="sm_whatsapp.group_whatsapp_user">
+                    <field name="whatsapp_message_count" string="WhatsApp" widget="statinfo"/>
+                </button>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>

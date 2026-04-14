@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form_whatsapp" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.whatsapp</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="WhatsApp" string="WhatsApp" name="sm_whatsapp" groups="sm_whatsapp.group_whatsapp_manager">
+                    <block title="Meta Cloud API Configuration">
+                        <setting string="API Credentials" help="Configure your Meta WhatsApp Cloud API credentials">
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="whatsapp_api_token" string="API Token" class="col-lg-3 o_light_label"/>
+                                    <field name="whatsapp_api_token" class="col-lg-6" password="True"/>
+                                </div>
+                                <div class="row mt8">
+                                    <label for="whatsapp_phone_number_id" string="Phone Number ID" class="col-lg-3 o_light_label"/>
+                                    <field name="whatsapp_phone_number_id" class="col-lg-6"/>
+                                </div>
+                                <div class="row mt8">
+                                    <label for="whatsapp_business_account_id" string="Business Account ID" class="col-lg-3 o_light_label"/>
+                                    <field name="whatsapp_business_account_id" class="col-lg-6"/>
+                                </div>
+                                <div class="row mt8">
+                                    <label for="whatsapp_api_version" string="API Version" class="col-lg-3 o_light_label"/>
+                                    <field name="whatsapp_api_version" class="col-lg-3"/>
+                                </div>
+                            </div>
+                        </setting>
+                        <setting string="Security" help="Configure webhook and security settings">
+                            <div class="content-group">
+                                <div class="row mt16">
+                                    <label for="whatsapp_webhook_verify_token" string="Webhook Verify Token" class="col-lg-3 o_light_label"/>
+                                    <field name="whatsapp_webhook_verify_token" class="col-lg-6"/>
+                                </div>
+                                <div class="row mt8">
+                                    <label for="whatsapp_app_secret" string="App Secret" class="col-lg-3 o_light_label"/>
+                                    <field name="whatsapp_app_secret" class="col-lg-6" password="True"/>
+                                </div>
+                                <div class="row mt16">
+                                    <div class="col-lg-9">
+                                        <span class="text-muted">
+                                            Webhook URL: <code>&lt;your-odoo-url&gt;/whatsapp/webhook</code>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </setting>
+                        <setting string="Test Connection" help="Verify your API credentials work correctly">
+                            <div class="content-group mt16">
+                                <button name="action_test_whatsapp_connection" type="object"
+                                        string="Test Connection" class="btn-primary" icon="fa-plug"/>
+                                <button name="action_sync_whatsapp_templates" type="object"
+                                        string="Sync Templates from Meta" class="btn-secondary ms-2" icon="fa-refresh"/>
+                            </div>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
