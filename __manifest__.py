@@ -19,7 +19,7 @@ Direct connector to Meta WhatsApp Cloud API — no middleware, no monthly subscr
 - wa.me fallback when API is not configured
     """,
     'author': 'Steven Marp',
-    'website': 'https://github.com/stevenmarp',
+    'website': 'https://apps.odoo.com/apps/browse?repo_maintainer_id=512936',
     'category': 'Productivity/Discuss',
     'license': 'OPL-1',
 
